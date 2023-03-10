@@ -29,6 +29,7 @@ $ pip install torch
 ```
 ## 🎯 Inference demo
 1. Testing with **Images** ( Put test images in **ESRGAN/test_imgs/** )  :-
+2. Outputs with **Images** ( saved in **ESRGAN/saved_imgs/** )  :-
 
 ```python
 # Comment this code
@@ -43,7 +44,6 @@ for epoch in range(EPOCHS):
 # Replace this code
 save_imgs(gen, test_transform, test_dir="test_imgs")
 ```
-2. Outputs with **Images** ( saved in **ESRGAN/saved_imgs/** )  :-
 
 ## ESRGAN/test_imgs/baboon_LR.png
 ![test img baboon_LR](https://github.com/ShaikAnsarBasha/ComputerVision/blob/main/ESRGAN/test_imgs/baboon_LR.png)
