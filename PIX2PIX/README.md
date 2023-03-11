@@ -12,8 +12,10 @@
 
 ## 🏽‍ Download Pretrained Weights 
 - Download pretrained weights of **Generator** model manually : **gen.pth.tar** file from following Drive Link
-- https://drive.google.com/file/d/1kvY1y_qNldf41D6Hrc3uZTFlBuHTnCEp/view?usp=share_link
-- Place downloaded weights into current working directory **" ESRGAN/ "** folder.
+- https://drive.google.com/file/d/1-p_JzdPpHHgiUlNUSBfy7qakrGbBt3eO/view?usp=share_link
+- Download pretrained weights of **Discriminator** model manually : **disc.pth.tar** file from following Drive Link
+- https://drive.google.com/file/d/1-h7qCHF7VSWK_fiCzmWhYGyHlvIEs0s1/view?usp=share_link
+- Place downloaded weights into current working directory **" PIX2PIX/ "** folder.
 
 ## :desktop_computer:	Installation
 
@@ -28,24 +30,12 @@ $ pip install torch
 
 ```
 ## 🎯 Inference demo
-1. Testing with **Images** ( Put test images in **ESRGAN/test_imgs/** )  :-
-2. Outputs with **Images** ( saved in **ESRGAN/saved_imgs/** )  :-
+* Comment the training loop and run the inference function.
+* To track the training progress of our Generator download the following zip file
+* https://drive.google.com/file/d/1-I3vFNyBh8W1Xkao3bmM1kHdGkloeWUR/view?usp=share_link
 
-```python
-# Comment this code
-for epoch in range(EPOCHS):
-    train(train_data_loader, gen, critic, opt_gen, opt_critic, l1_loss, vgg_loss, gen_scaler, critic_scaler, epoch)
 
-    save_checkpoint(gen, opt_gen, filename=CHECKPOINT_GEN)
-    save_checkpoint(critic, opt_critic, filename=CHECKPOINT_CRITIC)
-```
-
-```python
-# Replace this code
-save_imgs(gen, test_transform, test_dir="test_imgs")
-```
-
-## ESRGAN/test_imgs/baboon_LR.png
-![test img baboon_LR](https://github.com/ShaikAnsarBasha/ComputerVision/blob/main/ESRGAN/test_imgs/baboon_LR.png)
-## ESRGAN/saved_imgs/baboon_LR.png
-![test img baboon_LR](https://github.com/ShaikAnsarBasha/ComputerVision/blob/main/ESRGAN/saved_imgs/baboon_LR.png)
+## PIX2PIX/saved_imgs/input_0.png
+![test img baboon_LR](https://github.com/ShaikAnsarBasha/ComputerVision/blob/main/PIX2PIX/saved_imgs/input_0.png)
+## PIX2PIX/saved_imgs/fake_0.png
+![test img baboon_LR](https://github.com/ShaikAnsarBasha/ComputerVision/blob/main/PIX2PIX/saved_imgs/fake_0.png)
