@@ -32,6 +32,6 @@ $ pip install torch
 ## 🎯 Inference demo
 
 ## UNET/saved_imgs/real.png (actual_output)
-![actual_output](https://github.com/ShaikAnsarBasha/ComputerVision/blob/main/Unet/saved_imgs/real.png)
+![actual_output](https://github.com/ShaikAnsarBasha/ComputerVision/blob/main/UNET/saved_imgs/real.png)
 ## UNET/saved_imgs/fake.png (predicted_output)
-![predicted_output](https://github.com/ShaikAnsarBasha/ComputerVision/blob/main/Unet/saved_imgs/real.png)
+![predicted_output](https://github.com/ShaikAnsarBasha/ComputerVision/blob/main/UNET/saved_imgs/fake.png)
