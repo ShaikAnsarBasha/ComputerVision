@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Upload new File</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="image"><br>
+        <input type="submit" value="Predict" id="submit"><br>
+        {% if image_file_path %}
+            <img src="{{image_file_path}}" width="224" height="224">
+            <h3>Prediction Class is: {{prediction["class"]}}</h3>
+            <h3>Prediction Confidence is: {{prediction["confidence"]}}</h3>
+        {% endif %}
+    </form>
+</body>
+</html>
