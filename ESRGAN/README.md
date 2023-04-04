@@ -13,7 +13,7 @@
 ## 🏽‍ Download Pretrained Weights 
 - Download pretrained weights of **Generator** model manually : **gen.pth.tar** file from following Drive Link
 - https://drive.google.com/file/d/1kvY1y_qNldf41D6Hrc3uZTFlBuHTnCEp/view?usp=share_link
-- Place downloaded weights into current working directory **" ESRGAN/ "** folder.
+- Place downloaded weights into current working directory **" ESRGAN/ "** folder.   
 
 ## :desktop_computer:	Installation
 
